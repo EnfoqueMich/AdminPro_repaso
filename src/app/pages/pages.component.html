@@ -1,0 +1,37 @@
+<div id="main-wrapper">
+    <!-- Main wrapper - style you can find in pages.scss -->
+
+    <app-header></app-header>
+    <!-- Componente superior de menú y buscador  -->
+
+    <app-sidebar></app-sidebar>
+    <!-- Componente lateral de menú  -->
+
+    <div class="page-wrapper">
+        <!-- Page wrapper  -->
+        <div class="container-fluid">
+            <!-- Container fluid  -->
+
+            <app-breadcrumbs></app-breadcrumbs>
+            <!-- Componente para ubicar donde estás en la web  -->
+
+            <router-outlet> </router-outlet>
+            <!-- Utilizamos las rutas permitidas en la ADMINISTRACIÓN -->
+
+            <div class="row">
+                <!-- Inicia contenido de la pagina -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            This is some text within a card block.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Finaliza contenido de la pagina -->
+
+        </div>
+        <!-- End Container fluid  -->
+    </div>
+    <!-- End Page wrapper  -->
+</div>
